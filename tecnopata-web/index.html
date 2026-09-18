@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECNOPATA — Tecnología fácil para tu negocio</title>
+<meta name="description" content="Páginas web, asesoría en IA, chatbots, WhatsApp, códigos QR y flyers. Especialistas en hotelería y turismo, y en negocios de cualquier rubro. Desde S/150.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tecnopata.com/">
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TECNOPATA">
+<meta property="og:title" content="TECNOPATA — Tecnología fácil para tu negocio">
+<meta property="og:description" content="Páginas web, IA, chatbots, WhatsApp, QR y flyers. Especialistas en hotelería y turismo, y en cualquier negocio.">
+<meta property="og:image" content="https://tecnopata.com/assets/logo.png">
+<meta property="og:url" content="https://tecnopata.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Seguridad: política de contenido, sin scripts ni marcos externos no autorizados -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.pexels.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action https://wa.me; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#111F2C">
+
+<link rel="icon" type="image/png" href="assets/logo_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Barra de progreso de lectura -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Loader / intro del logo -->
+<div class="intro" id="intro" aria-hidden="true">
+  <img class="intro-logo" src="assets/logo_icon.png" alt="">
+</div>
+
+<!-- Fondo de circuito animado, decorativo -->
+<div class="circuit-bg" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <path class="circuit-path circuit-path--blue" d="M -50 620 C 150 620, 180 420, 380 420 S 610 200, 850 200 S 1100 60, 1300 60" />
+    <path class="circuit-path circuit-path--green" d="M -80 120 C 120 120, 220 320, 460 320 S 760 560, 980 560 S 1150 720, 1350 720" />
+    <circle class="circuit-dot circuit-dot--blue" r="4"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+    <circle class="circuit-dot circuit-dot--green" r="4"><animateMotion dur="11s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+    <path id="p1" d="M -50 620 C 150 620, 180 420, 380 420 S 610 200, 850 200 S 1100 60, 1300 60" fill="none"/>
+    <path id="p2" d="M -80 120 C 120 120, 220 320, 460 320 S 760 560, 980 560 S 1150 720, 1350 720" fill="none"/>
+  </svg>
+</div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#inicio" class="brand" data-tab-link="inicio">
+      <span class="brand__icon-wrap"><img src="assets/logo_icon.png" alt="TECNOPATA" class="brand__icon"></span>
+      <span class="brand__text">
+        <span class="brand__name">TECNO<span class="brand__accent">PATA</span></span>
+        <span class="brand__by">Luis Villar Feria</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <button class="nav__link is-active" data-tab-link="inicio">Inicio</button>
+      <button class="nav__link" data-tab-link="tecnologia" style="--dot:var(--c-web)">Web &amp; IA</button>
+      <button class="nav__link" data-tab-link="conversaciones" style="--dot:var(--c-chat)">Chatbots &amp; WhatsApp</button>
+      <button class="nav__link" data-tab-link="marketing" style="--dot:var(--c-qr)">QR &amp; Flyers</button>
+      <button class="nav__link" data-tab-link="contacto">Contacto</button>
+    </nav>
+
+    <a class="btn btn--ghost topbar__cta btn--magnetic" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20TECNOPATA" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= INICIO ================= -->
+  <section class="tab is-active" id="tab-inicio" data-tab="inicio">
+    <div class="hero spotlight">
+      <div class="hero__text">
+        <p class="kicker">Tecnología fácil para tu negocio</p>
+        <h1 class="hero__title">
+          Tu negocio, <span class="word-swap gradient-text-anim" id="wordSwap">en internet</span>
+        </h1>
+        <p class="hero__sub">Tu web, tu atención y tus contenidos listos para vender mientras tú haces crecer el negocio.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--magnetic btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20mi%20asesoria%20gratis%20de%20TECNOPATA" target="_blank" rel="noopener noreferrer">Asesoría gratis por WhatsApp</a>
+          <button class="btn btn--outline" data-tab-link="tecnologia">Ver servicios</button>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num" data-count="6">0</span><span class="stat__label">servicios</span>
+            <span class="stat__tooltip">Web, IA, chatbots, WhatsApp, QR y flyers</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="150" data-prefix="S/">0</span><span class="stat__label">web desde</span>
+            <span class="stat__tooltip">Sube según el diseño y las funciones que pidas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">tuyo, siempre</span>
+            <span class="stat__tooltip">Dominio, cuentas y hosting a tu nombre</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="orb orb--blue"></div>
+        <div class="orb orb--green"></div>
+        <img src="assets/logo_icon.png" alt="" class="hero__logo">
+      </div>
+    </div>
+
+    <div class="marquee" aria-label="Áreas en las que trabajamos">
+      <div class="marquee__track">
+        <span class="marquee__item">🏨 Hoteles</span>
+        <span class="marquee__item">✈️ Agencias de viaje</span>
+        <span class="marquee__item">🍽️ Restaurantes</span>
+        <span class="marquee__item">🛍️ Tiendas</span>
+        <span class="marquee__item">💼 Cualquier negocio</span>
+        <span class="marquee__item">🏨 Hoteles</span>
+        <span class="marquee__item">✈️ Agencias de viaje</span>
+        <span class="marquee__item">🍽️ Restaurantes</span>
+        <span class="marquee__item">🛍️ Tiendas</span>
+        <span class="marquee__item">💼 Cualquier negocio</span>
+      </div>
+    </div>
+
+    <!-- Selector de soluciones con transición tipo producto -->
+    <section class="feature-block" aria-labelledby="feature-title">
+      <div class="feature-block__intro">
+        <p class="kicker">Tu siguiente movimiento</p>
+        <h2 id="feature-title">Elige qué quieres poner a trabajar</h2>
+        <p>Compara soluciones concretas y empieza por el punto que más puede mover tu negocio.</p>
+      </div>
+
+      <div class="feature-product feature--web" data-feature-product>
+        <div class="feature-product__copy">
+          <p class="feature-product__eyebrow" data-feature-eyebrow>Web profesional</p>
+          <h3 data-feature-title>Tu negocio siempre abierto</h3>
+          <p data-feature-description>Una página clara para que tus clientes te encuentren, confíen y te escriban.</p>
+          <a class="btn btn--primary feature-product__cta" data-feature-link href="https://wa.me/51955713075?text=Hola%2C%20quiero%20cotizar%20mi%20pagina%20web" target="_blank" rel="noopener noreferrer">Cotizar esta solución</a>
+        </div>
+
+        <div class="feature-device" aria-hidden="true">
+          <div class="feature-device__glow"></div>
+          <div class="feature-device__screen">
+              <div class="feature-device__topline"><span></span><span></span><span></span></div>
+              <div class="feature-device__logo">TECNO<span>PATA</span></div>
+              <div class="feature-device__visual feature-device__visual--web">
+                <div class="feature-device__hero-line"></div><div class="feature-device__hero-line feature-device__hero-line--short"></div>
+                <div class="feature-device__tiles"><span></span><span></span><span></span></div>
+              </div>
+              <div class="feature-device__visual feature-device__visual--ia">
+                <div class="feature-orbit"><i></i><i></i><i></i><b>IA</b></div><p>Tu asistente creativo</p>
+              </div>
+              <div class="feature-device__visual feature-device__visual--chatbot">
+                <div class="feature-bubble feature-bubble--in">¿Cuál es el horario?</div><div class="feature-bubble feature-bubble--out">¡Abrimos hasta las 10!</div><div class="feature-typing"><i></i><i></i><i></i></div>
+              </div>
+              <div class="feature-device__visual feature-device__visual--whatsapp">
+                <div class="feature-wa-head"><b>WhatsApp Business</b><span>•••</span></div><div class="feature-wa-row"><i></i><span>Catálogo</span><b>›</b></div><div class="feature-wa-row"><i></i><span>Ubicación</span><b>›</b></div><div class="feature-wa-row"><i></i><span>Horarios</span><b>›</b></div>
+              </div>
+              <div class="feature-device__visual feature-device__visual--qr">
+                <div class="feature-qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><strong>Escanea y descubre</strong><small>Menú digital · WhatsApp · Catálogo</small>
+              </div>
+          </div>
+        </div>
+
+        <div class="feature-product__index"><span data-feature-index>01</span><span>/ 05</span></div>
+      </div>
+
+      <div class="feature-tabs" role="tablist" aria-label="Soluciones de TECNOPATA">
+        <button class="feature-tab is-active" type="button" role="tab" aria-selected="true" data-feature="web">
+          <span class="feature-tab__swatch feature-tab__swatch--web"></span><span>Web profesional</span>
+        </button>
+        <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="ia">
+          <span class="feature-tab__swatch feature-tab__swatch--ia"></span><span>Asesoría IA</span>
+        </button>
+        <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="chatbot">
+          <span class="feature-tab__swatch feature-tab__swatch--chatbot"></span><span>Chatbot</span>
+        </button>
+        <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="whatsapp">
+          <span class="feature-tab__swatch feature-tab__swatch--whatsapp"></span><span>WhatsApp</span>
+        </button>
+        <button class="feature-tab" type="button" role="tab" aria-selected="false" data-feature="qr">
+          <span class="feature-tab__swatch feature-tab__swatch--qr"></span><span>QR y flyers</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="section-alt">
+      <h2 class="section-title">¿Qué necesita tu negocio hoy?</h2>
+
+      <div class="grid-picker">
+        <button class="pick-card tilt-card" data-tab-link="tecnologia" style="--c:var(--c-web); --c2:var(--c-ia)">
+          <span class="pick-card__icon">🌐</span>
+          <span class="pick-card__title">Web &amp; IA</span>
+          <span class="pick-card__desc">Haz que te encuentren, entiendan y contacten.</span>
+        </button>
+        <button class="pick-card tilt-card" data-tab-link="conversaciones" style="--c:var(--c-chat); --c2:var(--c-wa)">
+          <span class="pick-card__icon">💬</span>
+          <span class="pick-card__title">Chatbots &amp; WhatsApp</span>
+          <span class="pick-card__desc">Responde rápido incluso cuando estás ocupado.</span>
+        </button>
+        <button class="pick-card tilt-card" data-tab-link="marketing" style="--c:var(--c-qr); --c2:var(--c-flyers)">
+          <span class="pick-card__icon">🎨</span>
+          <span class="pick-card__title">QR &amp; Flyers</span>
+          <span class="pick-card__desc">Convierte cada escaneo y diseño en una oportunidad.</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="section-flow">
+      <h2 class="section-title">Así de simple</h2>
+      <div class="flow">
+        <div class="flow__step">
+          <span class="flow__num">1</span>
+          <h3>Nos cuentas</h3>
+          <p>Detectamos qué está frenando tu negocio.</p>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step">
+          <span class="flow__num">2</span>
+          <h3>Lo convertimos</h3>
+          <p>Diseñamos una solución clara y lista para usar.</p>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step">
+          <span class="flow__num">3</span>
+          <h3>Lo haces crecer</h3>
+          <p>Te quedas con el control y las herramientas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-band" data-accent="mixed">
+      <div class="cta-band__inner">
+        <p class="cta-band__kicker">Empecemos hoy</p>
+        <h2>¿Hablamos por WhatsApp?</h2>
+        <p class="cta-band__sub">Te respondemos el mismo día, sin compromiso.</p>
+        <a class="btn btn--primary btn--lg btn--magnetic btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20TECNOPATA" target="_blank" rel="noopener noreferrer">Hablar con TECNOPATA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WEB & IA ================= -->
+  <section class="tab tab--duo" id="tab-tecnologia" data-tab="tecnologia" style="--accent:var(--c-web); --accent-b:var(--c-ia); --accent-soft:var(--c-web-soft)">
+    <div class="service-hero spotlight">
+      <div class="service-hero__text">
+        <p class="kicker duo-kicker">Páginas Web &amp; Asesoría IA</p>
+        <h1>Una web que trabaja por tu negocio</h1>
+        <p class="service-hero__sub">Te construimos una página clara y te enseñamos a usar IA para avanzar más rápido.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--magnetic btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20paginas%20web%20y%20asesoria%20IA" target="_blank" rel="noopener noreferrer">Quiero empezar</a>
+        </div>
+      </div>
+      <div class="service-hero__visual">
+        <div class="photo-frame photo-frame--duo reveal">
+          <img src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400" alt="Pantalla de laptop mostrando el código de una página web" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="duo-grid">
+      <div class="duo-card" style="--dc:var(--c-web); --dc-soft:var(--c-web-soft)">
+        <p class="duo-card__eyebrow">Páginas Web</p>
+        <h2>Se te encuentra en Google, a cualquier hora</h2>
+        <div class="plans plans--single">
+          <div class="plan-card plan-card--highlight" style="--accent:var(--c-web)">
+            <p class="plan-card__tag">Un solo pago, sin mensualidades</p>
+            <h3>Página Web Profesional</h3>
+            <p class="plan-card__price">Desde S/150</p>
+            <ul class="plan-card__list">
+              <li>Diseño a tu medida, no una plantilla genérica</li>
+              <li>Dominio y hosting a tu nombre</li>
+              <li>El precio final depende del diseño y las funciones que necesites</li>
+            </ul>
+            <a class="btn btn--primary btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20cotizar%20mi%20pagina%20web%20%28desde%20S%2F150%29" target="_blank" rel="noopener noreferrer">Cotizar mi página</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="duo-card" style="--dc:var(--c-ia); --dc-soft:var(--c-ia-soft)">
+        <p class="duo-card__eyebrow">Asesoría en IA</p>
+        <h2>Usa la IA sin perder horas aprendiendo solo</h2>
+        <div class="benefit-grid benefit-grid--compact">
+          <div class="benefit-card" style="--accent:var(--c-ia)">
+            <span class="benefit-card__icon">📝</span>
+            <h3>Ahorra tiempo</h3>
+            <p>Respuestas y textos, en minutos.</p>
+          </div>
+          <div class="benefit-card" style="--accent:var(--c-ia)">
+            <span class="benefit-card__icon">🎯</span>
+            <h3>Automatiza</h3>
+            <p>Menos tareas repetitivas a mano.</p>
+          </div>
+        </div>
+        <div class="plans plans--single">
+          <div class="plan-card plan-card--highlight" style="--accent:var(--c-ia)">
+            <p class="plan-card__tag">Asesoría personalizada</p>
+            <h3>Sesión de acompañamiento</h3>
+            <p class="plan-card__price">S/10 <span>/ hora</span></p>
+            <ul class="plan-card__list">
+              <li>Diagnóstico inicial sin costo</li>
+              <li>Explicación simple, sin tecnicismos</li>
+            </ul>
+            <a class="btn btn--primary btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20una%20sesion%20de%20asesoria%20en%20IA" target="_blank" rel="noopener noreferrer">Reservar mi hora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHATBOTS & WHATSAPP ================= -->
+  <section class="tab tab--duo" id="tab-conversaciones" data-tab="conversaciones" style="--accent:var(--c-chat); --accent-b:var(--c-wa); --accent-soft:var(--c-chat-soft)">
+    <div class="service-hero spotlight">
+      <div class="service-hero__text">
+        <p class="kicker duo-kicker">Chatbots &amp; WhatsApp</p>
+        <h1>Responde rápido. Vende incluso cuando estás ocupado</h1>
+        <p class="service-hero__sub">Ordenamos tu WhatsApp y sumamos un chatbot para que cada consulta encuentre respuesta.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--magnetic btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20chatbots%20y%20WhatsApp" target="_blank" rel="noopener noreferrer">Quiero organizarme</a>
+        </div>
+      </div>
+      <div class="service-hero__visual">
+        <div class="photo-frame photo-frame--duo reveal">
+          <img src="https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400" alt="Persona sonriente atendiendo consultas de clientes con un headset" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="duo-grid">
+      <div class="duo-card" style="--dc:var(--c-chat); --dc-soft:var(--c-chat-soft)">
+        <p class="duo-card__eyebrow">Chatbots</p>
+        <h2>Responde, incluso a las 11 de la noche</h2>
+        <div class="chat-mock">
+          <div class="chat-bubble chat-bubble--in">Hola, ¿tienen delivery?</div>
+          <div class="chat-bubble chat-bubble--out">¡Sí! Cuéntame tu distrito 📍</div>
+          <div class="chat-bubble chat-bubble--out chat-bubble--typing"><span></span><span></span><span></span></div>
+        </div>
+        <ul class="mini-list" style="--accent:var(--c-chat)">
+          <li>Responde horarios, precios y catálogo</li>
+          <li>Captura los datos de quien quiere comprar</li>
+        </ul>
+        <a class="btn btn--outline" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20un%20chatbot%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer">Quiero mi chatbot</a>
+      </div>
+
+      <div class="duo-card" style="--dc:var(--c-wa); --dc-soft:var(--c-wa-soft)">
+        <p class="duo-card__eyebrow">WhatsApp</p>
+        <h2>Que nadie se quede esperando</h2>
+        <div class="phone-mock">
+          <div class="phone-mock__notch"></div>
+          <div class="phone-mock__screen">
+            <div class="wa-line wa-line--1"></div>
+            <div class="wa-line wa-line--2"></div>
+            <div class="wa-pill">Catálogo</div>
+            <div class="wa-pill">Ubicación</div>
+            <div class="wa-pill">Horarios</div>
+          </div>
+        </div>
+        <ul class="mini-list" style="--accent:var(--c-wa)">
+          <li>Mensajes bien organizados para tu equipo</li>
+          <li>Todo configurado en tu propia cuenta</li>
+        </ul>
+        <a class="btn btn--outline" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20ordenar%20mi%20WhatsApp%20Business" target="_blank" rel="noopener noreferrer">Ordenar mi WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QR & FLYERS ================= -->
+  <section class="tab tab--duo" id="tab-marketing" data-tab="marketing" style="--accent:var(--c-qr); --accent-b:var(--c-flyers); --accent-soft:var(--c-qr-soft)">
+    <div class="service-hero spotlight">
+      <div class="service-hero__text">
+        <p class="kicker duo-kicker">Códigos QR &amp; Flyers</p>
+        <h1>Haz que cada escaneo te acerque a una venta</h1>
+        <p class="service-hero__sub">QR, menús y piezas visuales pensadas para llevar a tu cliente al siguiente paso.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--magnetic btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20QR%20y%20flyers" target="_blank" rel="noopener noreferrer">Quiero mi diseño</a>
+        </div>
+      </div>
+      <div class="service-hero__visual">
+        <div class="photo-frame photo-frame--duo reveal">
+          <img src="https://images.pexels.com/photos/10032377/pexels-photo-10032377.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400" alt="Mesa de restaurante preparada con acceso a menú por código QR" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="duo-grid">
+      <div class="duo-card" style="--dc:var(--c-qr); --dc-soft:var(--c-qr-soft)">
+        <p class="duo-card__eyebrow">Códigos QR</p>
+        <h2>Un escaneo y ya ve tu menú</h2>
+        <div class="qr-mock qr-mock--inline">
+          <div class="qr-scan-line"></div>
+        </div>
+        <ul class="mini-list" style="--accent:var(--c-qr)">
+          <li>Cambia precios sin reimprimir nada</li>
+          <li>Lleva a tu local, WhatsApp o catálogo</li>
+        </ul>
+        <a class="btn btn--outline" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20un%20codigo%20QR%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer">Crear mi código QR</a>
+      </div>
+
+      <div class="duo-card" style="--dc:var(--c-flyers); --dc-soft:var(--c-flyers-soft)">
+        <p class="duo-card__eyebrow">Flyers y diseño</p>
+        <h2>Listos para publicar o imprimir</h2>
+        <div class="plans plans--single">
+          <div class="plan-card plan-card--highlight" style="--accent:var(--c-flyers)">
+            <p class="plan-card__tag">Diseño a tu medida</p>
+            <h3>Flyers, menús y redes</h3>
+            <p class="plan-card__price">S/15 <span>/ diseño</span></p>
+            <ul class="plan-card__list">
+              <li>Listo para WhatsApp, Instagram o imprenta</li>
+              <li>Publicaciones sueltas desde S/3</li>
+            </ul>
+            <a class="btn btn--primary btn--shimmer" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20un%20diseno%20de%20flyer%20o%20menu" target="_blank" rel="noopener noreferrer">Pedir este servicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="tab" id="tab-contacto" data-tab="contacto">
+    <div class="contact contact--simple">
+      <p class="kicker">Hablemos</p>
+      <h1>Cuéntanos qué necesita tu negocio</h1>
+      <p class="service-hero__sub">Respondemos el mismo día, directo por WhatsApp.</p>
+
+      <a class="btn btn--primary btn--lg btn--magnetic btn--shimmer whatsapp-btn" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20TECNOPATA" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-btn__icon">📱</span> Escríbenos al +51 955 713 075
+      </a>
+
+      <p class="contact__by">Luis Villar Feria — Director de TECNOPATA</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__logo-wrap"><img src="assets/logo_icon.png" alt="TECNOPATA" class="footer__logo"></span>
+      <p>Tecnología fácil para tu negocio.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Liderazgo</h4>
+      <p>Luis Villar Feria<br>Director y Consultor Principal</p>
+    </div>
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <p><a href="https://wa.me/51955713075" target="_blank" rel="noopener noreferrer">WhatsApp +51 955 713 075</a></p>
+    </div>
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <p>
+        <a href="politica-privacidad.html">Política de Privacidad</a><br>
+        <a href="terminos-condiciones.html">Términos y Condiciones</a><br>
+        <a href="politica-ia.html">Uso de Inteligencia Artificial</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 TECNOPATA — Luis Villar Feria. Todos los derechos reservados. Tu dominio y cuentas, siempre a tu nombre.</p>
+  </div>
+</footer>
+
+<!-- Animación final, visible únicamente en Contacto -->
+<section class="crowd-section" aria-label="Animación de personas">
+  <div class="crowd-stage">
+    <canvas class="crowd-canvas" data-crowd-canvas aria-hidden="true"></canvas>
+  </div>
+</section>
+
+<!-- Formulario único para personalizar cada consulta de WhatsApp -->
+<div class="lead-modal" id="leadModal" hidden>
+  <div class="lead-modal__backdrop" data-lead-close></div>
+  <div class="lead-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+    <button class="lead-modal__close" type="button" aria-label="Cerrar formulario" data-lead-close>&times;</button>
+    <p class="kicker">Hagámoslo personal</p>
+    <h2 id="leadModalTitle">Cuéntanos sobre tu negocio</h2>
+    <p class="lead-modal__intro">Con estos datos te respondemos por WhatsApp con una propuesta más precisa.</p>
+    <form class="lead-form" id="leadForm">
+      <label class="lead-field">Nombre de la persona
+        <input type="text" name="personName" autocomplete="name" required placeholder="Ej. Luis Villar">
+      </label>
+      <label class="lead-field">Nombre del negocio
+        <input type="text" name="businessName" autocomplete="organization" required placeholder="Ej. Hotel Central">
+      </label>
+      <label class="lead-field">Rubro del negocio
+        <input type="text" name="businessType" required placeholder="Ej. restaurante, hotel, tienda">
+      </label>
+      <label class="lead-field">Servicio que quiere
+        <select name="service" id="leadService" required>
+          <option value="Página Web Profesional">Página Web Profesional</option>
+          <option value="Asesoría en IA">Asesoría en IA</option>
+          <option value="Chatbot">Chatbot</option>
+          <option value="WhatsApp Business">WhatsApp Business</option>
+          <option value="Código QR">Código QR</option>
+          <option value="Flyers y diseño">Flyers y diseño</option>
+          <option value="Consulta general">Consulta general</option>
+        </select>
+      </label>
+      <fieldset class="lead-field lead-field--choice">
+        <legend>¿Ya cuenta con una idea?</legend>
+        <label><input type="radio" name="hasIdea" value="Sí" required> Sí</label>
+        <label><input type="radio" name="hasIdea" value="No"> No</label>
+      </fieldset>
+      <button class="btn btn--primary btn--lg lead-form__submit" type="submit">Continuar a WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="whatsapp-float" href="https://wa.me/51955713075?text=Hola%2C%20quiero%20saber%20mas%20sobre%20TECNOPATA" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+  <span class="whatsapp-float__icon">📱</span>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
