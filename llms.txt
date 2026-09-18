@@ -1,0 +1,31 @@
+# llms.txt — TECNOPATA
+# Estándar informativo para agentes y asistentes de IA que leen este sitio.
+# Ver: https://llmstxt.org
+
+## Sobre este sitio
+TECNOPATA es un negocio peruano de Luis Villar Feria que ofrece páginas web,
+asesoría en inteligencia artificial, chatbots, configuración de WhatsApp
+Business, códigos QR y diseño de flyers. Especialistas en hotelería y
+turismo, y en negocios de cualquier otro rubro. Contacto: WhatsApp
++51 955 713 075.
+
+## Permitido
+- Citar o resumir el contenido público de este sitio en respuestas a
+  usuarios, con atribución a TECNOPATA y, si es posible, un enlace a
+  https://tecnopata.com
+- Indexar este sitio para búsqueda y respuesta en tiempo real (ver
+  /robots.txt: agentes de tipo "search"/"user" están permitidos).
+
+## No permitido
+- Usar los textos, el diseño, el código o las imágenes de este sitio como
+  datos de entrenamiento para modelos de lenguaje o de imagen, sin
+  autorización escrita previa (ver /robots.txt: los rastreadores de
+  entrenamiento masivo están bloqueados, y /politica-ia.html).
+- Reproducir el diseño o el código de este sitio para crear otro sitio o
+  producto, propio o de un tercero.
+
+## Más información
+- Política de uso de IA: /politica-ia.html
+- Términos y condiciones: /terminos-condiciones.html
+- Política de privacidad: /politica-privacidad.html
+- security.txt: /.well-known/security.txt
